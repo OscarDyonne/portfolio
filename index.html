@@ -6,44 +6,114 @@
   <title>Oscar Dyonne | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-  <header>
-    <h1>Oscar Dyonne</h1>
-    <p>Réseaux, cybersécurité, systèmes & projets IT</p>
+  <header class="navbar">
+    <a href="#" class="logo">Oscar Dyonne</a>
+
+    <nav>
+      <a href="#about" data-fr="À propos" data-en="About">À propos</a>
+      <a href="#skills" data-fr="Compétences" data-en="Skills">Compétences</a>
+      <a href="#projects" data-fr="Projets" data-en="Projects">Projets</a>
+      <a href="#contact" data-fr="Contact" data-en="Contact">Contact</a>
+      <button id="lang-switch">EN</button>
+    </nav>
   </header>
 
   <main>
-    <section>
-      <h2>À propos</h2>
-      <p>
-        Étudiant en réseaux et télécommunications, je travaille sur des projets
-        d’infrastructure, migration mail, audit de droits, supervision et support IT.
+    <section class="hero">
+      <div class="hero-content">
+        <p class="tagline" data-fr="Réseaux • Systèmes • Cybersécurité" data-en="Networks • Systems • Cybersecurity">
+          Réseaux • Systèmes • Cybersécurité
+        </p>
+
+        <h1 data-fr="Portfolio technique d’Oscar Dyonne" data-en="Oscar Dyonne’s technical portfolio">
+          Portfolio technique d’Oscar Dyonne
+        </h1>
+
+        <p class="hero-text"
+           data-fr="Étudiant en Réseaux et Télécommunications, je travaille sur des projets d’infrastructure, de migration, d’audit de droits et de support IT."
+           data-en="Network and Telecommunications student working on infrastructure, migration, access audit and IT support projects.">
+          Étudiant en Réseaux et Télécommunications, je travaille sur des projets d’infrastructure, de migration, d’audit de droits et de support IT.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#projects" class="btn primary" data-fr="Voir mes projets" data-en="View my projects">Voir mes projets</a>
+          <a href="assets/cv.pdf" class="btn secondary" target="_blank" data-fr="Télécharger mon CV" data-en="Download my resume">Télécharger mon CV</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <h2 data-fr="À propos" data-en="About">À propos</h2>
+      <p data-fr="Mon profil est orienté administration réseau, systèmes, cybersécurité et documentation technique. J’aime les projets concrets : comprendre l’existant, diagnostiquer les problèmes, structurer les solutions et produire une documentation exploitable."
+         data-en="My profile focuses on network administration, systems, cybersecurity and technical documentation. I enjoy practical projects: understanding the existing environment, diagnosing issues, structuring solutions and producing usable documentation.">
+        Mon profil est orienté administration réseau, systèmes, cybersécurité et documentation technique. J’aime les projets concrets : comprendre l’existant, diagnostiquer les problèmes, structurer les solutions et produire une documentation exploitable.
       </p>
     </section>
 
-    <section>
-      <h2>Projets</h2>
-      <article>
-        <h3>Migration Google Workspace</h3>
-        <p>Migration d’utilisateurs, configuration Outlook, accompagnement et documentation.</p>
-      </article>
+    <section id="skills" class="section">
+      <h2 data-fr="Compétences" data-en="Skills">Compétences</h2>
 
-      <article>
-        <h3>Audit d’arborescence réseau</h3>
-        <p>Analyse des accès, droits utilisateurs, groupes et propositions de restructuration.</p>
-      </article>
+      <div class="grid">
+        <article class="card">
+          <h3 data-fr="Réseau" data-en="Networking">Réseau</h3>
+          <p>VLAN, DHCP, DNS, routage, OSPF, adressage IP, commutation.</p>
+        </article>
 
-      <article>
-        <h3>Infrastructure réseau & sécurité</h3>
-        <p>VLAN, Proxmox, pare-feu, proxy, supervision et documentation technique.</p>
-      </article>
+        <article class="card">
+          <h3 data-fr="Systèmes" data-en="Systems">Systèmes</h3>
+          <p>Windows, Linux, Active Directory, Google Workspace, Outlook, Proxmox.</p>
+        </article>
+
+        <article class="card">
+          <h3 data-fr="Sécurité" data-en="Security">Sécurité</h3>
+          <p>OPNsense, Squid, ALCASAR, audit de droits, segmentation réseau.</p>
+        </article>
+      </div>
     </section>
 
-    <section>
-      <h2>Contact</h2>
-      <p>Email : <a href="mailto:oscardyonne32@gmail.com">oscardyonne32@gmail.com</a></p>
-      <p>GitHub : <a href="https://github.com/oscardyonne32">@oscardyonne32</a></p>
+    <section id="projects" class="section">
+      <h2 data-fr="Projets" data-en="Projects">Projets</h2>
+
+      <div class="grid">
+        <article class="card project">
+          <h3 data-fr="Migration Google Workspace" data-en="Google Workspace Migration">Migration Google Workspace</h3>
+          <p data-fr="Accompagnement d’utilisateurs, configuration Outlook, tests de compatibilité, documentation et suivi de migration."
+             data-en="User support, Outlook configuration, compatibility testing, documentation and migration follow-up.">
+            Accompagnement d’utilisateurs, configuration Outlook, tests de compatibilité, documentation et suivi de migration.
+          </p>
+        </article>
+
+        <article class="card project">
+          <h3 data-fr="Audit d’arborescence et de droits" data-en="Folder structure and access rights audit">Audit d’arborescence et de droits</h3>
+          <p data-fr="Analyse des partages réseau, des droits utilisateurs, des groupes et proposition de restructuration."
+             data-en="Analysis of network shares, user permissions, groups and restructuring proposals.">
+            Analyse des partages réseau, des droits utilisateurs, des groupes et proposition de restructuration.
+          </p>
+        </article>
+
+        <article class="card project">
+          <h3 data-fr="Infrastructure réseau sécurisée" data-en="Secure network infrastructure">Infrastructure réseau sécurisée</h3>
+          <p data-fr="Mise en place de VLAN, virtualisation Proxmox, pare-feu, proxy et documentation d’architecture."
+             data-en="VLAN setup, Proxmox virtualization, firewall, proxy and architecture documentation.">
+            Mise en place de VLAN, virtualisation Proxmox, pare-feu, proxy et documentation d’architecture.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <h2 data-fr="Contact" data-en="Contact">Contact</h2>
+      <p><a href="mailto:oscardyonne32@gmail.com">oscardyonne32@gmail.com</a></p>
+      <p><a href="https://github.com/OscarDyonne" target="_blank">GitHub</a></p>
     </section>
   </main>
+
+  <footer>
+    <p>© 2026 Oscar Dyonne</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
